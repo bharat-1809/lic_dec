@@ -12,7 +12,6 @@
 
 *NOTE:* The current implementation is just for experimental purpose. Its just a depiction of how the application will work.
 
-<br>
 
 **After testing for various threshold values, I have found that a threshold of 85% works well.**
 
@@ -20,7 +19,6 @@
 
 [LicenseClassifier](https://github.com/google/licenseclassifier/blob/bb04aff29e72e636ba260ec61150c6e15f111d7e/stringclassifier/classifier.go#L70) which uses almost the same approach to detect licenses has a [threshold value](https://github.com/google/licenseclassifier/blob/bb04aff29e72e636ba260ec61150c6e15f111d7e/stringclassifier/classifier.go#L70) of 80% 
 
-<br>
 
 ### Output for a normal case:
 ```
@@ -43,7 +41,6 @@ Confidence: 98.44632768361582%
 
 Its a match!!
 ```
-<br>
 
 ### Output when the order of the text is changed:
 ```
