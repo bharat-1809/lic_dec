@@ -115,29 +115,5 @@ double finalConfidence(String s1, String s2) {
   return confidence;
 }
 
-/// Need to see why to use it. LicenseClassifier used this strategy. Need to do
-/// more research.
-int diffRangeEnd(String known, List<Diff> diffs) {
-  var seen = '';
-  final len = diffs.length;
-  var end;
-
-  for (end = 0; end < len; ++end) {
-    if (seen == known) {
-      break;
-    }
-
-    switch (diffs[end].operation) {
-      case Operation.equal:
-      case Operation.insert:
-        seen += diffs[end].text!;
-        break;
-      default:
-        break;
-    }
-  }
-  return end;
-}
-
 /// Threshold Value
 const double threshold = 0.85;
